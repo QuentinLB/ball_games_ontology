@@ -130,6 +130,9 @@
         <ObjectProperty IRI="#BallTypeUsed"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#PlayedOn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasEquipment"/>
     </Declaration>
     <Declaration>
@@ -424,6 +427,14 @@
         <Class IRI="#SurfaceSynthetique"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Baseball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Basketball"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Rugby"/>
         <NamedIndividual IRI="#BeachRugby"/>
     </ClassAssertion>
@@ -432,8 +443,28 @@
         <NamedIndividual IRI="#BeachSoccer"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#BeachVolley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Billard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Bowling"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Chaussures"/>
         <NamedIndividual IRI="#Crampons"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Cricket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Crosse"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Football"/>
@@ -453,6 +484,10 @@
             <Class IRI="#ObjetSpheriquePlein"/>
         </ObjectExactCardinality>
         <NamedIndividual IRI="#Golf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Handball"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#TraditionalSport"/>
@@ -482,6 +517,25 @@
         <NamedIndividual IRI="#Football"/>
         <NamedIndividual IRI="#Futsal"/>
     </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#BeachVolley"/>
+        <NamedIndividual IRI="#Volley"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Baseball"/>
+        <NamedIndividual IRI="#Batte"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Baseball"/>
+        <NamedIndividual IRI="#Gants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Billard"/>
+        <NamedIndividual IRI="#Queue"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Football"/>
@@ -504,9 +558,148 @@
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Baseball"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Basketball"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#BeachRugby"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#BeachSoccer"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#BeachVolley"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Billard"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Bowling"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Cricket"/>
+        <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Crosse"/>
+        <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Football"/>
+        <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Futsal"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Golf"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Handball"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Jorkyball"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Petanque"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Petanque"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#PingPong"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Polo"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
         <NamedIndividual IRI="#Rugby13"/>
         <Literal datatypeIRI="&xsd;integer">13</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Softball"/>
+        <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Softball"/>
+        <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Softball"/>
+        <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Softball"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Squash"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Tennis"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Tennis"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Volley"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Waterpolo"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <Class IRI="#Sport"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasEquipment"/>
         <Class IRI="#Sport"/>
@@ -517,6 +710,10 @@
             <ObjectProperty IRI="#hasEquipment"/>
             <Class IRI="#ObjetSpherique"/>
         </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <Class IRI="#Environnement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEquipment"/>
