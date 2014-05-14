@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/quentin/ontologies/2014/4/untitled-ontology-3"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/quentin/ontologies/2014/4/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aquatique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Batons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Batte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chaussures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chistera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crosse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environnement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Football"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gazon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternationalSport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maillet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marteau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjetDeFrappe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjetDeReception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjetSpherique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjetSpheriqueCreux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjetSpheriquePlein"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parquet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piscine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Queue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raquette"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RaquetteAvecTamis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RaquettePleine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RevetementSynthetique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rugby"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceNaturelle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceSynthetique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrestre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraditionalSport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#BallTypeUsed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEquipment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#test"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#teamSize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baseball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basketball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Batte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BatteCricket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeachRugby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeachSoccer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BeachVolley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Billard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bowling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chistera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crampons"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cricket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crosse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CrosseEquipment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Football"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Futsal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gants"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Golf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Handball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jorkyball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maillet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pelote"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PeloteBasque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Petanque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PingPong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Polo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Queue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RaquettePingPong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RaquetteSquash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RaquetteTennis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rugby13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rugby15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rugby7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Softball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Squash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TagRugby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tennis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USFootball"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Volley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Waterpolo"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aquatique"/>
+        <Class IRI="#Environnement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Batons"/>
+        <Class IRI="#ObjetDeFrappe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Batte"/>
+        <Class IRI="#Batons"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chaussures"/>
+        <Class IRI="#ObjetDeFrappe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chistera"/>
+        <Class IRI="#Gant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Club"/>
+        <Class IRI="#Batons"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crosse"/>
+        <Class IRI="#ObjetDeReception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Football"/>
+        <Class IRI="#InternationalSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gant"/>
+        <Class IRI="#ObjetDeReception"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gazon"/>
+        <Class IRI="#SurfaceNaturelle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternationalSport"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maillet"/>
+        <Class IRI="#Marteau"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marteau"/>
+        <Class IRI="#ObjetDeFrappe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjetDeFrappe"/>
+        <Class IRI="#Equipement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjetDeReception"/>
+        <Class IRI="#Equipement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjetSpherique"/>
+        <Class IRI="#Equipement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjetSpheriqueCreux"/>
+        <Class IRI="#ObjetSpherique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjetSpheriquePlein"/>
+        <Class IRI="#ObjetSpherique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parquet"/>
+        <Class IRI="#SurfaceSynthetique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piscine"/>
+        <Class IRI="#Aquatique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Queue"/>
+        <Class IRI="#Batons"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Raquette"/>
+        <Class IRI="#ObjetDeFrappe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RaquetteAvecTamis"/>
+        <Class IRI="#Raquette"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RaquettePleine"/>
+        <Class IRI="#Raquette"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RevetementSynthetique"/>
+        <Class IRI="#SurfaceSynthetique"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rugby"/>
+        <Class IRI="#InternationalSport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sable"/>
+        <Class IRI="#SurfaceNaturelle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceNaturelle"/>
+        <Class IRI="#Terrestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceSynthetique"/>
+        <Class IRI="#Terrestre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terre"/>
+        <Class IRI="#SurfaceNaturelle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrestre"/>
+        <Class IRI="#Environnement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraditionalSport"/>
+        <Class IRI="#Sport"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Aquatique"/>
+        <Class IRI="#Terrestre"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Batons"/>
+        <Class IRI="#Marteau"/>
+        <Class IRI="#Raquette"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Crosse"/>
+        <Class IRI="#Gant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gazon"/>
+        <Class IRI="#Sable"/>
+        <Class IRI="#Terre"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ObjetSpheriqueCreux"/>
+        <Class IRI="#ObjetSpheriquePlein"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Parquet"/>
+        <Class IRI="#RevetementSynthetique"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RaquetteAvecTamis"/>
+        <Class IRI="#RaquettePleine"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SurfaceNaturelle"/>
+        <Class IRI="#SurfaceSynthetique"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Football"/>
+        <NamedIndividual IRI="#BeachSoccer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chaussures"/>
+        <NamedIndividual IRI="#Crampons"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Football"/>
+        <NamedIndividual IRI="#Football"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Football"/>
+        <NamedIndividual IRI="#Futsal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Golf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectExactCardinality>
+        <NamedIndividual IRI="#Golf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TraditionalSport"/>
+        <NamedIndividual IRI="#PeloteBasque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEquipment"/>
+            <Class IRI="#Chistera"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#PeloteBasque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rugby"/>
+        <NamedIndividual IRI="#Rugby13"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#BeachRugby"/>
+        <NamedIndividual IRI="#Rugby13"/>
+        <NamedIndividual IRI="#Rugby15"/>
+        <NamedIndividual IRI="#Rugby7"/>
+        <NamedIndividual IRI="#TagRugby"/>
+        <NamedIndividual IRI="#USFootball"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#BeachSoccer"/>
+        <NamedIndividual IRI="#Football"/>
+        <NamedIndividual IRI="#Futsal"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Football"/>
+        <NamedIndividual IRI="#Crampons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Football"/>
+        <NamedIndividual IRI="#Gants"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Golf"/>
+        <NamedIndividual IRI="#Club"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <NamedIndividual IRI="#Rugby13"/>
+        <NamedIndividual IRI="#Crampons"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#teamSize"/>
+        <NamedIndividual IRI="#Rugby13"/>
+        <Literal datatypeIRI="&xsd;integer">13</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <Class IRI="#Sport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#BallTypeUsed"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasEquipment"/>
+            <Class IRI="#ObjetSpherique"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEquipment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEquipment"/>
+            <Class IRI="#Equipement"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#teamSize"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
