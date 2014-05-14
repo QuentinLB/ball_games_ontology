@@ -193,6 +193,9 @@
         <NamedIndividual IRI="#Gants"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Gazon"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Golf"/>
     </Declaration>
     <Declaration>
@@ -205,6 +208,9 @@
         <NamedIndividual IRI="#Maillet"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Parquet"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Pelote"/>
     </Declaration>
     <Declaration>
@@ -215,6 +221,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#PingPong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piscine"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Polo"/>
@@ -232,6 +241,9 @@
         <NamedIndividual IRI="#RaquetteTennis"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#RevetementsSynthetiques"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Rugby13"/>
     </Declaration>
     <Declaration>
@@ -239,6 +251,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Rugby7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sable"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Softball"/>
@@ -253,6 +268,9 @@
         <NamedIndividual IRI="#Tennis"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Terre"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#USFootball"/>
     </Declaration>
     <Declaration>
@@ -261,6 +279,13 @@
     <Declaration>
         <NamedIndividual IRI="#Waterpolo"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Rugby"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Aquatique"/>
         <Class IRI="#Environnement"/>
@@ -428,11 +453,40 @@
         <NamedIndividual IRI="#Baseball"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Baseball"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
         <NamedIndividual IRI="#Basketball"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Basketball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Batte"/>
+        <NamedIndividual IRI="#Batte"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Batte"/>
+        <NamedIndividual IRI="#BatteCricket"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Rugby"/>
+        <NamedIndividual IRI="#BeachRugby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#BeachRugby"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -440,7 +494,21 @@
         <NamedIndividual IRI="#BeachSoccer"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#BeachSoccer"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#BeachVolley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#BeachVolley"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -448,8 +516,30 @@
         <NamedIndividual IRI="#Billard"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Billard"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
         <NamedIndividual IRI="#Bowling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Bowling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chistera"/>
+        <NamedIndividual IRI="#Chistera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Club"/>
+        <NamedIndividual IRI="#Club"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Chaussures"/>
@@ -460,16 +550,56 @@
         <NamedIndividual IRI="#Cricket"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Cricket"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
         <NamedIndividual IRI="#Crosse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Crosse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Batons"/>
+        <NamedIndividual IRI="#CrosseEquipment"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Football"/>
         <NamedIndividual IRI="#Football"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Football"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Football"/>
         <NamedIndividual IRI="#Futsal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Futsal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gant"/>
+        <NamedIndividual IRI="#Gants"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gazon"/>
+        <NamedIndividual IRI="#Gazon"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#InternationalSport"/>
@@ -487,11 +617,44 @@
         <NamedIndividual IRI="#Handball"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Handball"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
         <NamedIndividual IRI="#Jorkyball"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Jorkyball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Maillet"/>
+        <NamedIndividual IRI="#Maillet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parquet"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RaquettePleine"/>
+        <NamedIndividual IRI="#Pelote"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#TraditionalSport"/>
+        <NamedIndividual IRI="#PeloteBasque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#PeloteBasque"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -499,15 +662,67 @@
         <NamedIndividual IRI="#Petanque"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Petanque"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
         <NamedIndividual IRI="#PingPong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#PingPong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Piscine"/>
+        <NamedIndividual IRI="#Piscine"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#InternationalSport"/>
         <NamedIndividual IRI="#Polo"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Polo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Queue"/>
+        <NamedIndividual IRI="#Queue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RaquettePleine"/>
+        <NamedIndividual IRI="#RaquettePingPong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RaquetteAvecTamis"/>
+        <NamedIndividual IRI="#RaquetteSquash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RaquetteAvecTamis"/>
+        <NamedIndividual IRI="#RaquetteTennis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RevetementSynthetique"/>
+        <NamedIndividual IRI="#RevetementsSynthetiques"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Rugby"/>
+        <NamedIndividual IRI="#Rugby13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#Rugby13"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -515,11 +730,36 @@
         <NamedIndividual IRI="#Rugby15"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Rugby15"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Rugby"/>
         <NamedIndividual IRI="#Rugby7"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Rugby7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sable"/>
+        <NamedIndividual IRI="#Sable"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Softball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#Softball"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -527,7 +767,21 @@
         <NamedIndividual IRI="#Squash"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriquePlein"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Squash"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#TagRugby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#TagRugby"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -535,7 +789,25 @@
         <NamedIndividual IRI="#Tennis"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Tennis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Terre"/>
+        <NamedIndividual IRI="#Terre"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#USFootball"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#USFootball"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -543,7 +815,21 @@
         <NamedIndividual IRI="#Volley"/>
     </ClassAssertion>
     <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Volley"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#InternationalSport"/>
+        <NamedIndividual IRI="#Waterpolo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#BallTypeUsed"/>
+            <Class IRI="#ObjetSpheriqueCreux"/>
+        </ObjectSomeValuesFrom>
         <NamedIndividual IRI="#Waterpolo"/>
     </ClassAssertion>
     <DifferentIndividuals>
@@ -568,6 +854,11 @@
         <NamedIndividual IRI="#Volley"/>
     </DifferentIndividuals>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Baseball"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Baseball"/>
         <NamedIndividual IRI="#Batte"/>
@@ -583,14 +874,54 @@
         <NamedIndividual IRI="#Crampons"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Basketball"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#BeachRugby"/>
+        <NamedIndividual IRI="#Sable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#BeachSoccer"/>
+        <NamedIndividual IRI="#Sable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#BeachVolley"/>
+        <NamedIndividual IRI="#Sable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Billard"/>
+        <NamedIndividual IRI="#RevetementsSynthetiques"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Billard"/>
         <NamedIndividual IRI="#Queue"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Bowling"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Cricket"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Cricket"/>
         <NamedIndividual IRI="#BatteCricket"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Crosse"/>
+        <NamedIndividual IRI="#Gazon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
@@ -603,6 +934,11 @@
         <NamedIndividual IRI="#Crampons"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Football"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Football"/>
         <NamedIndividual IRI="#Gants"/>
@@ -613,9 +949,44 @@
         <NamedIndividual IRI="#Crampons"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Futsal"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Golf"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Golf"/>
+        <NamedIndividual IRI="#Terre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Golf"/>
+        <NamedIndividual IRI="#Sable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Golf"/>
         <NamedIndividual IRI="#Club"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Handball"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Jorkyball"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#PeloteBasque"/>
+        <NamedIndividual IRI="#RevetementsSynthetiques"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
@@ -628,9 +999,19 @@
         <NamedIndividual IRI="#Pelote"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Petanque"/>
+        <NamedIndividual IRI="#Terre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#PingPong"/>
         <NamedIndividual IRI="#RaquettePingPong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Polo"/>
+        <NamedIndividual IRI="#Gazon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
@@ -638,9 +1019,19 @@
         <NamedIndividual IRI="#Maillet"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Rugby13"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Rugby13"/>
         <NamedIndividual IRI="#Crampons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Rugby15"/>
+        <NamedIndividual IRI="#Gazon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
@@ -648,9 +1039,19 @@
         <NamedIndividual IRI="#Crampons"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Rugby7"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Rugby7"/>
         <NamedIndividual IRI="#Crampons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Softball"/>
+        <NamedIndividual IRI="#Gazon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
@@ -668,9 +1069,19 @@
         <NamedIndividual IRI="#Gants"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Squash"/>
+        <NamedIndividual IRI="#Parquet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Squash"/>
         <NamedIndividual IRI="#RaquetteSquash"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#TagRugby"/>
+        <NamedIndividual IRI="#Gazon"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
@@ -678,9 +1089,39 @@
         <NamedIndividual IRI="#Crampons"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Tennis"/>
+        <NamedIndividual IRI="#Terre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Tennis"/>
+        <NamedIndividual IRI="#RevetementsSynthetiques"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Tennis"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
         <NamedIndividual IRI="#Tennis"/>
         <NamedIndividual IRI="#RaquetteTennis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#USFootball"/>
+        <NamedIndividual IRI="#Gazon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Volley"/>
+        <NamedIndividual IRI="#RevetementsSynthetiques"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PlayedOn"/>
+        <NamedIndividual IRI="#Waterpolo"/>
+        <NamedIndividual IRI="#Piscine"/>
     </ObjectPropertyAssertion>
     <NegativeObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEquipment"/>
