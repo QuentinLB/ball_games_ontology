@@ -424,6 +424,10 @@
         <Class IRI="#SurfaceSynthetique"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Rugby"/>
+        <NamedIndividual IRI="#BeachRugby"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Football"/>
         <NamedIndividual IRI="#BeachSoccer"/>
     </ClassAssertion>
